@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Package 1</title>
+
+
+	<!-- swiper CSS link-->
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+	<!-- font cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- custom css-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+ <style>
+        /* Add your CSS styles here */
+        .package-details {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<!--header section start -->
+<section class="header">
+
+<a href="home" class="logo">Travel.</a>
+<nav class="navbar">
+	<a href="/home">Home</a>
+	<a href="/tabout">About</a>
+	<a href="/Package">Package</a>
+	<a href="/tbook">Book</a>
+</nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+ </section>
+
+ <!--Header end-->
+
+ <div class="heading" style="background: url( {{ url_for('static',filename='details.jpg')}} );">
+ 	<h1>Details</h1>
+
+ </div>
+
+ <!--About section start-->
+   <section  class="aboutt">
+        <div id="details-container">
+
+
+            <div class="package-details" id="details1">
+                   <div class="content">
+	                    <h3>Hunza</h3>
+	                    <p>5 Days Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1:  Arrival in Hunza</p>
+						  <p>Day 2:  Exploring Hunza Valley</p>
+						  <p>Day 3:  Excursion to Attabad Lake and Passu Cones</p>
+						  <p>Day 4:  Khunjerab Pass and Cultural Immersion</p>
+						  <p>Day 5:  Departure from Hunza</p>
+						
+						  <div class="price">20,500/- <span>23,000/-</span></div>
+						 <a href="/tbook?location=Hunza" class="btn" data-value="Hunza">Book now</a>
+					</div>
+            </div>
+
+			<div class="package-details" id="details2">
+                   <div class="content">
+	                    <h3>Neelum Valley</h3>
+	                    <p>3 Days Tour(Every Friday)</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1:  Islamabad to Keran</p>
+						  <p>Day 2:  Keran to Sharda</p>
+						  <p>Day 3:  Sharda to Kel and Arang Kel</p>
+						  <div class="price">13,500/- <span>15,000/-</span></div>
+						 <a href="/tbook?location=Neelum Valley" class="btn">Book now</a>
+					</div>
+            </div>
+
+			<div class="package-details" id="details3">
+                   <div class="content">
+	                    <h3>MalamJabba</h3>
+	                    <p>1 Day Tour(Every Sunday)</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Breakfast Stop</p>
+						  <p>Ski Resort Visit</p>
+						  <p>Chairlift and Zipline</p>
+						  <p>Photography and Sightseeing</p>
+						  <div class="price">4,000/- <span>5,000/-</span></div>
+						 <a href="/tbook?location=MalamJabba" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details4">
+                   <div class="content">
+	                    <h3>Ganga Choti</h3>
+	                    <p>1 Day Tour(Every Saturday)</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Breakfast Stop</p>
+						  <p>Sudhan Gali</p>
+						  <p>Hikking</p>
+						  <p>Ganga Choti</p>
+						  <p>Lunch</p> 
+						  <div class="price">4,000/- <span>4,500/-</span></div>
+						 <a href="/tbook?location=Ganga Choti" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details5">
+                   <div class="content">
+	                    <h3>Shogran</h3>
+	                    <p>1 Day Tour(Every Friday)</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Breakfast Stop</p>
+						  <p>Shogran</p>
+						  <p>Jeep Ride to Siri Paye</p>
+						  <p>Siri Paye Meadows</p>
+						  <p>Lunch</p> 
+						  <div class="price">4,000/- <span>5,000/-</span></div>
+						 <a href="/tbook?location=Shogran" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details6">
+                   <div class="content">
+	                    <h3>Arang kel</h3>
+	                    <p>1 Day Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Breakfast Stop</p>
+						  <p>Arrival at Kel</p>
+						  <p>Chairlift to Arang Kel</p>
+						  <p>Hike to Arang Kel</p>
+						  <p>Lunch</p> 
+						  <div class="price">3,500/- <span>5,000/-</span></div>
+						 <a href="/tbook?location=Arang kel" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details7">
+                   <div class="content">
+	                    <h3>Swat,kalam & Malam Jabba</h3>
+	                    <p>3 Day Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Swat(Breakfast,Swat Museum,Marghazar White Palace,Dinner and Overnight Stay)</p>
+						  <p>Day 2: Swat to Kalam(Arrival in Kalam,Ushu Forest,Mahodand Lake)</p>
+						  <p>Day 3: Kalam to Malam Jabba and Return to Islamabad(Ski Resort Activities,Explore Malam Jabba,)</p>
+						  
+						  <div class="price">15,000/- <span>16,500/-</span></div>
+						 <a href="/tbook?location=Swat,kalam & Malam Jabba" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details8">
+                   <div class="content">
+	                    <h3>Kashmir,Neelum valley & Arang kel.</h3>
+	                    <p>3 Day Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Keran (Neelum Valley)(Breakfast,Keran,Lunch,Dinner and Overnight Stay)</p>
+						  <p>Day 2: Keran to Arang Kel(Chairlift to Arang Kel,Hike to Arang Kel,Lunch)</p>
+						  <p>Day 3: Arang Kel to Sharda and Return to Islamabad(Chairlift to Kel,Explore Sharda,Dinner )</p>
+						  <div class="price">15,000/- <span>17,000/-</span></div>
+						 <a href="/tbook?location=Kashmir,Neelum valley & Arang kel." class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details9">
+                   <div class="content">
+	                    <h3>Naran-kaghan valley</h3>
+	                    <p>3 Day Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Naran(Saif-ul-Malook Lake,Lunch,Explore Naran Bazaar)</p>
+						  <p>Day 2: Naran to Babusar Pass and Lulusar Lake(Lulusar Lake,Babusar Pass,River Rafting (Optional))</p>
+						  <p>Day 3: Naran to Shogran and Return to Islamabad(Shogran,Siri Paye Meadows,Lunch )</p>
+						  <div class="price">16,500/-  <span>18,000/-</span></div>
+						 <a href="/tbook?location=Naran-kaghan valley" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details10">
+                   <div class="content">
+	                    <h3>Hunza & Sakardu</h3>
+	                    <p>6 Days Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Naran(Saif-ul-Malook Lake,Lunch,Explore Naran Bazaar)</p>
+						  <p>Day 2: Naran to Hunza(Lulusar Lake,Babusar Pass,Explore Karimabad)</p>
+						  <p>Day 3: Explore Hunza(Altit and Baltit Forts,Eagle’s Nest,Hopper Glacier )</p>
+						  <p>Day 4: Hunza to Skardu(Sightseeing En Route,Arrival in Skardu,Skardu Town)</p>
+						  <p>Day 5: Skardu and Surroundings(Shangrila Resort,Upper Kachura Lake,Sheosar Lake,Skardu Fort)</p>
+						  <p>Day 6: Skardu to Islamabad</p>
+						  <div class="price">24,000/- <span>25,500/-</span></div>
+						 <a href="/tbook?location=Hunza & Sakardu" class="btn">Book now</a>
+					</div>
+            </div>
+             <div class="package-details" id="details11">
+                   <div class="content">
+	                    <h3>Fairy Meadows</h3>
+	                    <p>5 Days Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Raikot Bridge(Breakfast,Raikot Bridge,Hike or Jeep Ride to Tato Village,Trek to Fairy Meadows)</p>
+						  <p>Day 2: Fairy Meadows Exploration(Nanga Parbat Viewpoint,Bonfire and Stargazing)</p>
+						  <p>Day 3: Beyal Camp Trek(Hike to Beyal Camp,Picnic Lunch)</p>
+						  <p>Day 4: Return to Raikot BridgeDay 4: Return to Raikot Bridge and Drive to Islamabad</p>
+						  <p>Day 5: Drive to Islamabad</p>
+						  <div class="price">16,500/- <span>18,000/-</span></div>
+						 <a href="/tbook?location=Fairy Meadows" class="btn">Book now</a>
+					</div>
+            </div>
+            <div class="package-details" id="details12">
+                   <div class="content">
+	                    <h3>Minimarg & Astore</h3>
+	                    <p>6 Days Tour</p>
+	                    <p>People form Karachi,Lahore & other cities also join us from Islamabad</p></p>
+						  <p>Day 1: Islamabad to Astore</p>
+						  <p>Day 2: Astore to Minimarg</p>
+						  <p>Day 3: Minimarg Exploration</p>
+						  <p>Day 4: Minimarg to Astore</p>
+						  <p>Day 5: Astore Valley Exploration</p>
+						  <p>Day 6: Return to Islamabad</p>
+						  <div class="price">35,000/- <span>36,500/-</span></div>
+						 <a href="/tbook?location=Minimarg & Astore" class="btn">Book now</a>
+					</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!--About section end-->
+ 
+<!--footer-->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>Quick Links</h3>
+			<a href="home"><i class="fas fa-angle-right"></i> Home</a>
+			<a href="about"><i class="fas fa-angle-right"></i>About</a>
+			<a href="Package"><i class="fas fa-angle-right"></i>Package</a>
+			<a href="Book"><i class="fas fa-angle-right"></i>Book</a>
+		</div>
+		
+		<div class="box">
+			<h3>Extra Links</h3>
+			<a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+			<a href="#"><i class="fas fa-angle-right"></i>About us</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+		</div>
+
+		<div class="box">
+			<h3>Contact info</h3>
+		
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-envelope"></i>konynali110@gmail.com</a>
+		     <a href="#"><i class="fas fa-map"></i>Pakistan,Wah catt</a>		
+		</div>
+
+		<div class="box">
+			<h3>follow us</h3>
+			<a href="#"><i class="fas fa-facebook"></i>Facebook</a>	
+			<a href="#"><i class="fas fa-twitter"></i>Twitter</a>	
+			<a href="#"><i class="fas fa-instagram"></i>Instagram</a>
+			<a href="#"><i class="fas fa-linkedin"></i>Linkedin</a>	
+		</div>
+	</div>
+	<div class="credit"> Created by <span>Ms. Konyn</span> | al rights preserved! </div>
+
+</section>
+
+   <script>
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const packageId = getQueryParameter('id');
+            if (packageId) {
+                // Hide all package details
+                const allDetails = document.querySelectorAll('.package-details');
+                allDetails.forEach(detail => detail.style.display = 'none');
+
+                // Show the selected package detail
+                const detailElement = document.getElementById(`details${packageId}`);
+                if (detailElement) {
+                    detailElement.style.display = 'block';
+                }
+            }
+        });
+    </script>
+     <script>
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const value = this.getAttribute('data-value');
+                document.getElementById('location').value = value;
+            });
+        });
+    </script>
+</body>
+</html>

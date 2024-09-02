@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>package</title>
+
+
+	<!-- swiper CSS link-->
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+	<!-- font cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- custom css-->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css')}}">
+
+</head>
+<body>
+
+<!--header section start -->
+<section class="header">
+
+<a href="home" class="logo">Travel.</a>
+<nav class="navbar">
+	<a href="/home">Home</a>
+	<a href="/tabout">About</a>
+	<a href="/Package">Package</a>
+	<a href="/tbook">Book</a>
+</nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+ </section>
+
+ <!--Header end-->
+
+ <div class="heading" style="background: url(  {{ url_for('static',filename='PackgBG.jpg')}} );">
+ 	<h1>Packages</h1>
+
+ </div>
+
+
+ <!--Packages section  start-->
+
+<section class="home-packagess">
+	<h1 class="heading-title">Top Destinations</h1>
+	<div class="box-container">
+		<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='Khunjrabpass.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Hunza</h3><!--1st pkg ID 1-->
+				<p>5 Days Tour(Every Week)</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">20,500/- <span>23,000/-</span></div>
+				 <a href="/hunza?id=1" class="btn">More Details</a>
+
+			</div>
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='neelum valley.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Neelum Valley</h3> <!--2nd pkg ID 2-->
+				<p>3 Days Tour(Every Friday)</p><p>People form Karachi & other cities also join us from Lahore & Islamabad</p>
+				<div class="price">13,500/- <span>15,000/-</span></div>
+				<a href="/hunza?id=2" class="btn">More Details</a>
+			</div>
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='mallamjabba.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>MalamJabba</h3><!--3rd pkg ID 3-->
+				<p>1 Day Tour(Every Sunday)</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">4,000/- <span>5,000/-</span></div>
+				<a href="/hunza?id=3" class="btn" >More Details</a>
+			</div>
+		</div>
+		<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='jammu and kashmir.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Ganga Choti</h3><!--4th pkg ID 4-->
+				<p>1 Day Tour(Every Saturday)</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">4,000/- <span>4,500/-</span></div>
+				<a href="/hunza?id=4" class="btn">More Details</a>
+			</div>
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='Shogran, Pakistan.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Shogran</h3><!--5th pkg ID 5-->
+				<p>1 Day Tour(Every Friday)</p><p>People form Karachi & other cities also join us from wah & Islamabad</p>
+				<div class="price">4,000/- <span>5,000/-</span></div>
+				<a href="/hunza?id=5" class="btn">More Details</a>
+			</div>
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='Kalam Road.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Arang kel</h3><!--6th pkg ID 6-->
+				<p>1 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">3,500/- <span>5,000/-</span></div>
+				 <a href="/hunza?id=6" class="btn">More Details</a>
+			</div>
+		</div>
+		<div class="boxx">
+			<div class="image">
+				<img src=" {{ url_for('static',filename='lake swat Kalam.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Swat,kalam & Malam Jabba</h3><!--7th pkg ID 7-->
+				<p>3 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">15,000/- <span>16,500/-</span></div>
+				 <a href="/hunza?id=7" class="btn">More Details</a>
+			</div>
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='Arang Kel.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Kashmir,Neelum valley & Arang kel.</h3><!--8th pkg ID 8-->
+				<p>3 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">15,500/- <span>17,000/-</span></div>
+				 <a href="/hunza?id=8" class="btn">More Details</a>
+			</div>"
+		</div>
+
+			<div class="boxx">
+			<div class="image">
+				<img src="{{ url_for('static',filename='Naran.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3> Naran-kaghan valley</h3><!--9th pkg ID 9-->
+				<p>3 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">16,500/- <span>18,000/-</span></div>
+				 <a href="/hunza?id=9" class="btn">More Details</a>
+			</div>
+		</div>
+		
+   </div>
+<div class="load-more" id="loadmore">
+    <button class="btn">Load more</button>
+</div>
+
+</section>
+
+
+
+
+ <!--Packages section  end-->
+
+
+<!--footer-->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>Quick Links</h3>
+			<a href="home"><i class="fas fa-angle-right"></i> Home</a>
+			<a href="about"><i class="fas fa-angle-right"></i>About</a>
+			<a href="Package"><i class="fas fa-angle-right"></i>Package</a>
+			<a href="Book"><i class="fas fa-angle-right"></i>Book</a>
+		</div>
+		
+		<div class="box">
+			<h3>Extra Links</h3>
+			<a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+			<a href="#"><i class="fas fa-angle-right"></i>About us</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+		</div>
+
+		<div class="box">
+			<h3>Contact info</h3>
+		
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-envelope"></i>konynali110@gmail.com</a>
+		     <a href="#"><i class="fas fa-map"></i>Pakistan,Wah catt</a>		
+		</div>
+
+		<div class="box">
+			<h3>follow us</h3>
+			<a href="#"><i class="fas fa-facebook"></i>Facebook</a>	
+			<a href="#"><i class="fas fa-twitter"></i>Twitter</a>	
+			<a href="#"><i class="fas fa-instagram"></i>Instagram</a>
+			<a href="#"><i class="fas fa-linkedin"></i>Linkedin</a>	
+		</div>
+	</div>
+	<div class="credit"> Created by <span>Ms. Konyn</span> | al rights preserved! </div>
+
+</section>
+
+<!--swiper JS link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!--custom JS -->
+<script src="{{ url_for('static',filename='main.js')}}"></script>
+</body>
+</html>

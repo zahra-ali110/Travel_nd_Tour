@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Home</title>
+
+
+	<!-- swiper CSS link-->
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+	<!-- font cdn link-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<!-- custom css-->
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style.css')}}">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+
+
+
+
+<!--header section start -->
+<section class="header">
+
+<a href="home" class="logo"><i class="fas fa-paper-plan"></i> Travel.</a>
+<nav class="navbar">
+	<a href="/home">Home</a>
+	<a href="/tabout">About</a>
+	<a href="/Package">Package</a>
+	<a href="/tbook">Book</a>
+</nav>
+
+<div id="menu-btn" class="fas fa-bars"></div>
+
+ </section>
+<!--Header scetion ends-->
+
+
+
+
+<!--Home scetion starts-->
+<section class="home">
+	<div class="swiper home-slider">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slide" style="background: url({{url_for('static',filename='home-bg.jpg')}} )">
+				<div class="content">
+					<span>Explore, Discover, Travel</span>
+					<h3>Travel around the world</h3>
+					<a href="/Package" class="btn">Discover</a>
+				</div>
+
+			</div>
+			<div class="swiper-slide slide" style="background: url({{url_for('static',filename='home2.jpg')}} ) ">
+				<div class="content">
+					<span>Explore, Discover, Travel</span>
+					<h3>Discover the new places</h3>
+					<a href="/Package" class="btn">Discover</a>
+				</div>
+
+			</div>
+			<div class="swiper-slide slide" style="background: url({{url_for('static',filename='home3.jpg')}}">
+				<div class="content">
+					<span>Explore, Discover, Travel</span>
+					<h3>Make your tour worthwhile</h3>
+					<a href="/Package" class="btn">Discover</a>
+				</div>
+
+			</div>
+		</div>
+
+ <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+</section>
+<!--Home scetion ends-->
+
+
+
+<!--Services section starts -->
+
+<section class="services">
+	<h1 class="heading-title">
+		Our Services
+	</h1>
+<div class="box-container">
+	
+	<div class="box">
+		<img src="{{url_for('static',filename='mountain.png')}}" alt="">
+		<h3>Adventures</h3>
+	</div>
+		<div class="box">
+		<img src="{{url_for('static',filename='map.png')}}" alt="">
+		<h3>Tour guide</h3>
+	</div>
+
+		<div class="box">
+		<img src="{{url_for('static',filename='bag.png')}}" alt="">
+		<h3>Trekking</h3>
+	</div>
+		<div class="box">
+		<img src="{{url_for('static',filename='fire.png')}}" alt="">
+		<h3>Camp  fire</h3>
+	</div>
+
+		<div class="box">
+		<img src="{{url_for('static',filename='dir.png')}}" alt="">
+		<h3>Off road</h3>
+	</div>
+		<div class="box">
+		<img src="{{url_for('static',filename='tent.png')}}" alt="">
+		<h3>Camping</h3>
+	</div>
+</div>
+
+</section>
+<!--services scetion ends-->
+
+
+
+<!--home scetion start-->
+<section class="home-about">
+	<div class="image">
+		<img src="{{url_for('static',filename='homeabout.jpg')}}" alt="">
+	</div>
+<div class="content">
+	<h3>About us</h3>
+	<p>Welcome to Travel and Tour agency, where adventure meets luxury, and every journey is a story waiting to be told. Founded on the belief that travel is not just about visiting new places, but about experiencing them in a way that leaves lasting memories, we are dedicated to curating exceptional travel experiences that cater to the desires and dreams of every traveler.</p>
+	<a href="/tabout" class="btn">read more</a>
+</div>
+</section>
+
+<!--home scetion ends-->
+
+
+
+
+<!--home packages section starts-->
+<section class="home-packages">
+	<h1 class="heading-title">
+		Our Packages
+	</h1>
+	<div class="box-container">
+		<div class="box">
+			<div class="image">
+				<img src="{{url_for('static',filename='homepkg.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Hunza & Sakardu</h3>
+				<p>6 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">24,000/- <span>25,500/-</span></div>
+				 <a href="/hunza?id=10" class="btn">More Details</a>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="image">
+				<img src="{{url_for('static',filename='fairy.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Fairy Meadows</h3>
+				<p>5 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">16,500/- <span>18,000/-</span></div>
+				 <a href="/hunza?id=11" class="btn" >More Details</a>
+			</div>
+		</div>
+
+			<div class="box">
+			<div class="image">
+				<img src="{{url_for('static',filename='3rdpkg.jpg')}}" alt="">
+			</div>
+			<div class="content">
+				<h3>Minimarg & Astore</h3>
+				<p>6 Days Tour</p><p>People form Karachi,Lahore & other cities also join us from Islamabad</p>
+				<div class="price">35,000/- <span>36,500/-</span></div>
+				 <a href="/hunza?id=12" class="btn " >More Details</a>
+			</div>
+		</div>
+
+	</div>
+<div class="load-more"> <a href="/Package" class="btn">Load more</a> </div>
+</section>
+
+
+<!--home packages section end-->
+
+<!--home offer section starts-->
+
+<section class="home-offer">
+	<div class="content">
+		<h3>upto 50% off</h3>
+		<p>Here, we bring you exclusive deals and opportunities to find your dream home at unbeatable prices. Whether you're looking for a cozy apartment in the heart of the city, a spacious family house in the suburbs, or a luxurious villa with breathtaking views, we have something for everyone. </p>
+		<a href="/Package" class="btn">Book now</a>
+	</div>
+
+</section>
+
+
+
+<!--home offer section end-->
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+	<div class="box-container">
+		<div class="box">
+			<h3>Quick Links</h3>
+			<a href="home"><i class="fas fa-angle-right"></i> Home</a>
+			<a href="about"><i class="fas fa-angle-right"></i>About</a>
+			<a href="Package"><i class="fas fa-angle-right"></i>Package</a>
+			<a href="Book"><i class="fas fa-angle-right"></i>Book</a>
+		</div>
+		
+		<div class="box">
+			<h3>Extra Links</h3>
+			<a href="#"><i class="fas fa-angle-right"></i>Ask Questions</a>
+			<a href="#"><i class="fas fa-angle-right"></i>About us</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Privacy policy</a>
+			<a href="#"><i class="fas fa-angle-right"></i>Terms of use</a>
+		</div>
+
+		<div class="box">
+			<h3>Contact info</h3>
+		
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+			<a href="#"><i class="fas fa-envelope"></i>konynali110@gmail.com</a>
+		     <a href="#"><i class="fas fa-map"></i>Pakistan,Wah catt</a>		
+		</div>
+
+		<div class="box">
+			<h3>follow us</h3>
+			<a href="#"><i class="fas fa-facebook"></i>Facebook</a>	
+			<a href="#"><i class="fas fa-twitter"></i>Twitter</a>	
+			<a href="#"><i class="fas fa-instagram"></i>Instagram</a>
+			<a href="#"><i class="fas fa-linkedin"></i>Linkedin</a>	
+		</div>
+	</div>
+	<div class="credit"> Created by <span>Ms. Konyn</span> | al rights preserved! </div>
+
+</section>
+
+<!--swiper JS link-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!--custom JS -->
+<script src="{{ url_for('static',filename='main.js')}}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+</html>
